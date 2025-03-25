@@ -1,26 +1,384 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <!-- Grab favicon from local file -->
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet"/>
+    <link href="scrollbar.css" rel="stylesheet"/>
+    <title>Someone's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="nav-header">
+          <div class="nav-logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav-menu-btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#trainer">TRAINER</a></li>
+          <li><a href="#client">CLIENT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <!-- Grab Favicon from Google -->
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"> -->
-    <!-- Font Awesome V6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- Alt Z does a word wrap -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <i class="fa-brands fa-github"></i>
-    <!-- Press Cntrl ? to get this up nice and easy -->
-    <h1 class="test">Hello World!</h1>
-    <i class="fa fa-star"></i>
-    <h1>Hello World</h1>
-    <!-- Script -->
-     <script src="script.js"></script>
+    <header class="header" id="header">
+      <div class="section-container header-container">
+        <div class="header-content">
+          <h1>PORTFOLIO</h1>
+          <h2>Caption</h2>
+          <p>Little bit of information</p>
+          <div class="header-btn">
+            <a href="#about"><button class="btn btn-primary">Find out more</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-container about-container" id="about">
+      <div class="about-header">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1586439702132-55ce0da661dd?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div.about-img>
+        <h2 class="section-header">ABOUT ME</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum modi, dolorem provident soluta est delectus tempore doloribus maxime perferendis nobis pariatur, nostrum itaque et beatae facilis molestias quo consequuntur obcaecati! <br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab similique totam cupiditate vero. Tempore temporibus, modi necessitatibus, nobis at ad dolorum blanditiis eligendi cumque nam praesentium optio molestiae quos quo.</p>
+      </div>
+      <!-- <div class="about-grid">
+        <div class="about-card">
+          <h4>About</h4>
+          <p>
+            Info about company.
+          </p>
+        </div>
+        <div class="about-card">
+          <h4>AFFORDABLE PRICE</h4>
+          <p>
+            More information.
+          </p>
+        </div>
+        <div class="about-card">
+          <h4>About how it works</h4>
+          <p>
+            More information.
+          </p>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="session">
+      <div class="session-card">
+        <h4>More</h4>
+        <p>
+          information.
+        </p>
+        <a href="article1.html"><button class="btn btn-secondary">
+          READ MORE <i class="ri-arrow-right-line"></i> </button></a>  
+      </div>
+      <div class="session-card">
+        <h4>H4</h4>
+        <p>
+          Information
+        </p>
+        <a href="article2.html"><button class="btn btn-secondary">
+          READ MORE <i class="ri-arrow-right-line"></i> </button></a>
+      </div>
+      <div class="session-card">
+        <h4>H4</h4>
+        <p>
+          Lorem.
+        </p>
+        <a href="article3.html"><button class="btn btn-secondary">
+          READ MORE <i class="ri-arrow-right-line"></i> </button></a>
+      </div>
+      <div class="session-card">
+        <h4>Another H4</h4>
+        <p>
+          Some other aspect of the offered service.
+        </p>
+        <a href="article4.html"><button class="btn btn-secondary">
+          READ MORE <i class="ri-arrow-right-line"></i> </button></a>
+      </div>
+    </section>
+
+    <section class="section-container trainer-container" id="trainer">
+      <h2 class="section-header">MEET OUR TEAM</h2>
+      <div class="trainer-grid">
+        <div class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1597714026720-8f74c62310ba?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="trainer" />
+          <h4>Person 1</h4>
+          <p>Title of P1</p>
+          <div class="trainer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="trainer" />
+          <h4>Another person</h4>
+          <p>If they exist</p>
+          <div class="trainer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1547514701-42782101795e?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="trainer" />
+          <h4>Mystery Person</h4>
+          <p>Do they really exist??</p>
+          <div class="trainer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <img src="https://images.unsplash.com/photo-1514936477380-5ea603b9a1ca?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="trainer" />
+          <h4>Final Person</h4>
+          <p>Exhaustion exists.</p>
+          <div class="trainer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership">
+      <div class="section-container membership-container">
+        <h2 class="section-header">PRICES</h2>
+        <div class="membership-grid">
+          <div class="membership-card">
+            <h4>STANDARD</h4>
+            <ul>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Of service.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Services offered.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Complimentary x,y,z consultations.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                More compliments.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Guidance.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Some other reason.
+              </li>
+            </ul>
+            <h3><sup>£</sup>30<span>/month</span></h3>
+            <button class="btn btn-primary">BUY NOW</button>
+          </div>
+          <div class="membership-card">
+            <h4>PROFESSIONAL</h4>
+            <ul>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+            </ul>
+            <h3><sup>£</sup>45<span>/month</span></h3>
+            <button class="btn btn-primary">BUY NOW</button>
+          </div>
+          <div class="membership-card">
+            <h4>ULTIMATE</h4>
+            <ul>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                Reason.
+              </li>
+            </ul>
+            <h3><sup>£</sup>60<span>/month</span></h3>
+            <button class="btn btn-primary">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-container client-container" id="client">
+      <h2 class="section-header">OUR TESTIMONIALS</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!--<div class="swiper-slide">
+            <div class="client-card">
+              <img src="https://images.unsplash.com/photo-1607455701762-7ea9ccd3bf53?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptatum, ipsam accusantium consectetur ipsa maxime alias impedit voluptates voluptatem adipisci architecto autem quae ratione delectus repudiandae laboriosam odit provident. Tempora.
+              </p>
+              <h4>P2</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">-->
+            <!--<div class="client-card">-->
+                <div class="slideshow">
+                    <img src="https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Neom: A Call to Change" class="active">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brown Wooden Boat Moving towards Mountain">
+                    <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hot Air Balloon Flighing at High Altitude during Daytime">
+                  </div>
+
+
+              <!--<img src="https://images.unsplash.com/photo-1612253166766-c88431cdadee?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam corporis exercitationem minima, distinctio voluptates recusandae sapiente cum incidunt saepe error? Atque, asperiores labore! Incidunt cupiditate reprehenderit tempora, sequi aliquid illum.
+              </p>
+              <h4>PERSON</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client-card">
+              <img src="" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae ratione provident perspiciatis suscipit. Esse quo dolores odio. Atque ea reiciendis soluta rem itaque expedita assumenda id fuga illo maxime.
+              </p>
+              <h4>Another person</h4>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="section-container blog-container">
+        <h2 class="section-header">BLOGS</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1552089123-2d26226fc2b7?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="blog" />
+            <h4>Blog/News 1</h4>
+          </div>
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1519966283370-ba7869cd01ac?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="blog" />
+            <h4>Social Update 2</h4>
+          </div>
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1603736105517-55d3f7f18f73?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="blog" />
+            <h4>Milestone</h4>
+          </div>
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1519067438913-7aab3bff2281?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="blog" />
+            <h4>A Beginner's Guide to Starting...</h4>
+          </div>
+        </div>
+        <div class="blog-btn">
+          <button class="btn btn-primary">VIEW ALL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container logo-banner">
+      <img src="https://images.unsplash.com/photo-1599230396418-09e63394e3b0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" />
+      <img src="https://images.unsplash.com/photo-1599230396418-09e63394e3b0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" />
+      <img src="https://images.unsplash.com/photo-1599230396418-09e63394e3b0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" />
+      <img src="https://images.unsplash.com/photo-1599230396418-09e63394e3b0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="banner" />
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9496.706303473027!2d-2.218827480015681!3d53.483174747533816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb10dcc950ae3%3A0x549a8dcce67a876a!2sEtihad%20Stadium!5e0!3m2!1sen!2sus!4v1742907370076!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                <p>Location is here</p>      
+            </div>
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form id="footerForm" action="https://formspree.io/f/xvojeznp" method="POST">
+                    <div class="form-group">
+                        <label for="footer-name">Name *</label>
+                        <input type="text" id="footer-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-email">Email *</label>
+                        <input type="email" id="footer-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-message">Message *</label>
+                        <textarea id="footer-message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                    <div id="footerThankYouMessage">Thank you! Your message has been sent.</div>
+                </form>
+            </div>
+        </div>
+
+    
+   
+<div class="footer-socials">
+<a href="#"><i class="ri-facebook-fill"></i></a>
+<a href="#"><i class="ri-twitter-fill"></i></a>
+<a href="#"><i class="ri-youtube-fill"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bar">
+Copyright © 2025 AP. All rights reserved.
+</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
